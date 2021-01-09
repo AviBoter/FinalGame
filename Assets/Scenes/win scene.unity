@@ -161,7 +161,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '      *  You  Win *
 
-    To be continued.......
+    To be continued..
 
 '
   m_isRightToLeft: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -9.136399, y: 0, z: -10.818787, w: -8.25293}
+  m_margin: {x: -12.966074, y: -1.9441652, z: -4.8344946, w: -8.25293}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -297,8 +297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.39, y: 1.95}
-  m_SizeDelta: {x: 20, y: 5}
+  m_AnchoredPosition: {x: 3.22, y: 0.46}
+  m_SizeDelta: {x: 13.93935, y: 7.9747696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &591248527
 GameObject:
