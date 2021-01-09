@@ -56,7 +56,8 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-
+        playerWantsToDash = false;
+        playerWantsToJump = false;
         // Keyboard events are tested each frame, so we should check them here.
         if (Input.GetKeyDown(Jumpkey))
             playerWantsToJump = true;
