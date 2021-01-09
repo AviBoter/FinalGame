@@ -126,12 +126,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7171784863521963427}
-  explosion: {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
+  explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 1024
-  explosionRange: 40
-  explosionForce: 6000
+  explosionRange: 30
+  explosionForce: 4000
   maxCollisions: 2
   maxLifetime: 1.7
   explodeOnTouch: 1
@@ -143,7 +143,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7171784863521963425}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

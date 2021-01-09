@@ -48,8 +48,8 @@ public class CustomProjectiles : MonoBehaviour
             {
 
                 //Add explosion force to enemies
-                if (enemies[i].GetComponent<Rigidbody>())
-                    enemies[i].GetComponent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRange, 2f);
+                if (enemies[i].GetComponentInParent<Rigidbody>())
+                    enemies[i].GetComponentInParent<Rigidbody>().AddExplosionForce(explosionForce, transform.position, explosionRange, 2f);
             }
 
             Destroy(gameObject);

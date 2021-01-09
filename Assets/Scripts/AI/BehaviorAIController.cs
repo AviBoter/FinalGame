@@ -85,16 +85,15 @@ public class BehaviorAIController : MonoBehaviour
             if (!InSightRange && !InShootRange)
             {
                 patrolBehavior.Action(true);
-               
                 patrolBehavior.Action(false);
             }
             
-
             if (InSightRange && !InShootRange){ 
                 chaserBehavior.Action(player);
             }
             if (InSightRange && InShootRange && !InAttackRange)
             {
+                animator.Play("throw");
                 shootBehavior.Action(player, transform, shotPowerFoward, shotPowerUp, projectile, this, isGrounded());
             }
             if (InSightRange && InShootRange && InAttackRange)
