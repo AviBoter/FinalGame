@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class kickHim : MonoBehaviour
-{ 
+{
     [SerializeField] KeyCode KickKey;
     public float kickForce = 150f;
     public float kickRange = 40f;
@@ -29,18 +29,20 @@ public class kickHim : MonoBehaviour
                 {
                     hitInfo.rigidbody.gameObject.GetComponent<Animator>().Play("kicked");
                     hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
-                     // upwardsModifer is adviced to be 2f 
+                    // upwardsModifer is adviced to be 2f 
                     hitInfo.rigidbody.AddExplosionForce(kickForce, transform.position, kickRange, upwardsModifer);
 
                     //hitInfo.rigidbody.AddForce(-hitInfo.normal * gunForce, walkForceMode);
 
-                Debug.Log("ray hits: " + hitInfo.transform.name);
+                    Debug.Log("ray hits: " + hitInfo.transform.name);
+                }
             }
+
+
+
+
+
         }
-
-
-
-
-
     }
 }
+
