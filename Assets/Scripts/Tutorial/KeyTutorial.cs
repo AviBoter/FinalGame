@@ -4,23 +4,50 @@ using UnityEngine;
 
 
 // this is key tutorial script, order of pressed doesn't matter
+// check if user press given keys
 public class KeyTutorial : Tutorial
+
+
 {
+
+    //save those keys incase of reload
     public List<string> Keys = new List<string>();
+
+
+    private List<string> tempKeys = new List<string>();
+    public void Start()
+    {
+        deepCopyList();
+    }
+
+    // deepcopy keys list to tempKeys
+    private void deepCopyList()
+    {
+        foreach (string s in Keys)
+            tempKeys.Add(s.Trim());
+    }
+
+    public override void init()
+    {
+        deepCopyList();
+    }
+
 
     public override void CheckIfHappaning()
     {
-        for (int i = 0; i < Keys.Count; i++)
+        for (int i = 0; i < tempKeys.Count; i++)
         {
-            if (Input.inputString.Contains(Keys[i]))
+            Debug.Log(Input.inputString);
+
+            if (Input.inputString.Contains(tempKeys[i]))
             {
-                Keys.RemoveAt(i);
+                tempKeys.RemoveAt(i);
                 break;
             }
         }
 
         // load next Tutorial
-        if (Keys.Count == 0)
+        if (tempKeys.Count == 0)
             TutorialManager.Instance.CompletedTutorial();
     }
 }

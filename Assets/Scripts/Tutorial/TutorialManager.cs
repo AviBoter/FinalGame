@@ -55,6 +55,12 @@ public class TutorialManager : MonoBehaviour
     
     }
 
+    public void ReloadPrevTutorial()
+    {
+        SetNextTutorial(currentTutorial.Order - 1);
+
+    }
+
     public void SetNextTutorial(int currentOrder)
     {
         currentTutorial = GetTutorialByOrder(currentOrder);
