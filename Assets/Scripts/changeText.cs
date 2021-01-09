@@ -27,7 +27,7 @@ public class changeText : MonoBehaviour
         {
             Tree.SetActive(true);
            
-            text.text = "graet!! mow go to the end ";
+            text.text = "graet!! mow go to the "+Tree.gameObject.name;
         }
     }
 }
