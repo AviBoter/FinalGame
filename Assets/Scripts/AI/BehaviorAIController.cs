@@ -41,7 +41,7 @@ public class BehaviorAIController : MonoBehaviour
     private ChaserBehaviorAI chaserBehavior;
     private PatrolingBehaviorAI patrolBehavior;
     
-    private float velocetyBlock = 0.1f;
+    private float velocetyBlock = 0.2f;
     private Animator animator;
 
 
@@ -109,11 +109,7 @@ public class BehaviorAIController : MonoBehaviour
             agent.enabled = true;
             animator.SetBool("walk", true);
         }
-        else if (rb.velocity.magnitude > 2)
-        {
-            agent.enabled = true;
-            animator.SetBool("run", true);
-        }
+        
 
     }
 
