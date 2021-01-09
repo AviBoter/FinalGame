@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/CandyRoad.unity
     guid: 221160bcd12dca64085e655c89c04f4a
   - enabled: 1
-    path: Assets/Scenes/Zoo.unity
+    path: Assets/Scenes/forestWithoutAnimal.unity
     guid: b9a840d49fd7b83478c4f8398ba9b8fe
   - enabled: 1
     path: Assets/Scenes/win scene.unity
