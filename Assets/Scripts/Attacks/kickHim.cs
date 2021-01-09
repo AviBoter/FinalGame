@@ -39,7 +39,8 @@ public class kickHim : MonoBehaviour
                 if (hitInfo.rigidbody != null)
                 {
                     hitInfo.rigidbody.gameObject.GetComponent<Animator>().Play("kicked");
-                    hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+                    if(hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>())
+                        hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
                     hitInfo.rigidbody.AddForce(-hitInfo.normal * gunForce, walkForceMode);
                 }
                 Debug.Log("ray hits: " + hitInfo.transform.name);
