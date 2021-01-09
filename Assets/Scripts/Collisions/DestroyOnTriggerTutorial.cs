@@ -23,14 +23,21 @@ public class DestroyOnTriggerTutorial : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider other)
+
     {
+        Debug.Log("gtogtogt");
+
+        Debug.Log(other.tag);
+
+
         if (other.tag == player.tag && enabled)
         {
             player.position = PlayerStartPos;
             TutorialManager.Instance.ReloadPrevTutorial();
         }
-        else
+        else if(other.tag == "Enemy")
         {
+            Debug.Log("got here");
             Destroy(other.gameObject);
         }
 
