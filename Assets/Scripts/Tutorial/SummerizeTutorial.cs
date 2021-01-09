@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // this script coming after each tutorial
 // wait for user ReloadKey to reload prev tutorial
@@ -10,6 +11,9 @@ public class SummerizeTutorial : Tutorial
     [SerializeField] private KeyCode reloadKey;
 
     [SerializeField] private KeyCode nextKey;
+
+    [SerializeField] private KeyCode menuKey;
+
 
     [SerializeField] private Transform player;
 
@@ -32,5 +36,10 @@ public class SummerizeTutorial : Tutorial
         }
         else if (Input.GetKeyDown(nextKey))
             TutorialManager.Instance.CompletedTutorial();
+
+        else if (Input.GetKeyDown(menuKey))
+            // load menu scene
+            SceneManager.LoadScene(0);
+
     }
 }
