@@ -49,6 +49,8 @@ public class TutorialManager : MonoBehaviour
             currentTutorial.CheckIfHappaning();
     }
 
+
+
     public void CompletedTutorial()
     {
         SetNextTutorial(currentTutorial.Order + 1);
@@ -57,8 +59,11 @@ public class TutorialManager : MonoBehaviour
 
     public void ReloadPrevTutorial()
     {
-        SetNextTutorial(currentTutorial.Order - 1);
-
+        int orderNumber = currentTutorial.Order - 1;
+        if (orderNumber < 0)
+            SetNextTutorial(0); // go to first tutorial
+        else
+            SetNextTutorial(orderNumber);
     }
 
     public void SetNextTutorial(int currentOrder)
