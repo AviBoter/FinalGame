@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7171784863521963427}
   - component: {fileID: 7171784863521963426}
   - component: {fileID: 2714418717097467188}
+  - component: {fileID: 8798881597044929715}
   m_Layer: 14
   m_Name: PooProjectile
   m_TagString: Bullet
@@ -240,3 +241,15 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!114 &8798881597044929715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7171784863521963425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47decde0c6076bb42aea718fe01aa30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

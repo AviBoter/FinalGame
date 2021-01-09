@@ -36,6 +36,8 @@ public class PushForce : MonoBehaviour
         {
             if (other.gameObject.tag == "Enemy" && other.gameObject.GetComponent<NavMeshAgent>().isActiveAndEnabled && other.gameObject != null)
             {
+                GetComponent<Rigidbody>().isKinematic = true;
+                GetComponent<Rigidbody>().isKinematic = false;
                 GameObject go = other.gameObject;
                 Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
                 other.gameObject.GetComponent<Animator>().Play("pushed");
@@ -49,6 +51,7 @@ public class PushForce : MonoBehaviour
             {
                 other.gameObject.GetComponent<Animator>().Play("pushed");
                 other.rigidbody.AddForce(transform.forward * ForceLevel, forcemode);
+               
             }
 
         }

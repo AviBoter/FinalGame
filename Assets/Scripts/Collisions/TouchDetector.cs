@@ -21,7 +21,7 @@ public class TouchDetector : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if ((layerMask.value & (1 << collision.gameObject.layer)) > 0)
+        if ( (layerMask.value & (1 << collision.gameObject.layer)) > 0)
             touchingColliders++;
     }
 

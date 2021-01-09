@@ -14,18 +14,21 @@ public class LiftUpAndThrowAway : MonoBehaviour
     // Start is called before the first frame update
     void OnCollisionEnter(Collision o)
     {
-        if (o.gameObject.tag == "RedDragon" || o.gameObject.tag == "Player")
+        if ( o.gameObject.tag == "Player")
         {
             ThPlayer = o.gameObject;
             if (!lifted && Input.GetKey(KeyCode.R) && !ThPlayer.GetComponentInChildren<PushForce>().Lift)
             {
+                this.gameObject.GetComponent<CapsuleCollider>().enabled = false;
+                this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+                this.gameObject.GetComponent<Animator>().enabled = false;
                 GetComponent<Rigidbody>().useGravity = false;
                 this.gameObject.GetComponent<PushForce>().enabled = false;
-                this.gameObject.GetComponent<NavMeshAgent>().enabled = false;
-                GetComponent<Rigidbody>().isKinematic = true;
-                GetComponent<PushForce>().enabled = false;
-                this.transform.position = OtherPlayer.GetComponent<Transform>().position;
-                this.transform.rotation = OtherPlayer.GetComponent<Transform>().rotation;
+                this.gameObject.GetComponent<TouchDetector>().enabled = false;
+                this.gameObject.GetComponent<BehaviorAIController>().enabled = false;
+                this.gameObject.GetComponent<PushForce>().enabled = false;
+                this.gameObject.GetComponent<FasterThenABullet>().enabled = false;
+                this.gameObject.GetComponent<Freezed>().enabled = false;
                 this.transform.parent = GameObject.Find("Me").transform;
                 lifted = true;
                 ThPlayer.GetComponentInChildren<PushForce>().Lift = true;
@@ -37,14 +40,29 @@ public class LiftUpAndThrowAway : MonoBehaviour
 
     private void Update()
     {
-        if (lifted && Input.GetKey(KeyCode.R))
+        bool thorow = false;
+        if (lifted)
         {
-            this.transform.parent = null;
-            this.gameObject.GetComponent<PushForce>().enabled = true;
+            this.gameObject.GetComponent<CapsuleCollider>().enabled = true;
+            this.gameObject.GetComponent<CapsuleCollider>().radius = 0.0001f;
+            this.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+            this.gameObject.GetComponent<Animator>().enabled = true;
+            this.gameObject.GetComponent<Animator>().Play("Captured");
+            thorow = true;
+        }
+
+        if (lifted && Input.GetKeyDown(KeyCode.T)) { 
+         GetComponent<Rigidbody>().useGravity = true;
+         this.gameObject.GetComponent<PushForce>().enabled = true;
+         this.gameObject.GetComponent<TouchDetector>().enabled = true;
             this.gameObject.GetComponent<NavMeshAgent>().enabled = true;
-            GetComponent<Rigidbody>().isKinematic = false;
-            GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<Rigidbody>().AddRelativeForce(ThPlayer.GetComponent<Rigidbody>().velocity * Throwing_force);
+            this.gameObject.GetComponent<BehaviorAIController>().enabled = true;
+         this.gameObject.GetComponent<PushForce>().enabled = true;
+         this.gameObject.GetComponent<FasterThenABullet>().enabled = true;
+         this.gameObject.GetComponent<Freezed>().enabled = true;
+         ThPlayer.GetComponentInChildren<PushForce>().Lift = false;
+         GetComponent<Rigidbody>().AddRelativeForce(ThPlayer.GetComponent<Rigidbody>().velocity * Throwing_force);
+            this.gameObject.GetComponent<Animator>().enabled = true;
             lifted = false;
             GetComponent<PushForce>().enabled = true;
             ThPlayer.GetComponentInChildren<PushForce>().Lift = false;

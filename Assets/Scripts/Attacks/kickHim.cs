@@ -12,7 +12,7 @@ public class kickHim : MonoBehaviour
     [SerializeField] Color rayColor = Color.black;
     [SerializeField] Camera camera = null;
     [SerializeField] KeyCode KickKey;
-    public float gunForce = 30f;
+    public float gunForce = 300f;
     public ForceMode walkForceMode;
     Transform me;
     //private NavMeshAgent nav;
