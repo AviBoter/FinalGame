@@ -129,8 +129,8 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
-  explosionRange: 25
-  explosionForce: 2500
+  explosionRange: 50
+  explosionForce: 3000
   maxCollisions: 2
   maxLifetime: 1.7
   explodeOnTouch: 1
@@ -182,8 +182,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0030899048
-        value: 0.41729927
+        time: 0.23838425
+        value: 0.19002724
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -191,8 +191,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.9785996
-        value: 0.06119193
+        time: 0.5898667
+        value: 0.08391227
         inSlope: -0.86715496
         outSlope: -0.86715496
         tangentMode: 0

@@ -41,7 +41,6 @@ public class ShootEnemies : MonoBehaviour
 
             //Attack
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-
             rb.AddForce(transform.forward * shotPowerFoward, ForceMode.Impulse);
             rb.AddForce(transform.up * shotPowerUp, ForceMode.Impulse);
 

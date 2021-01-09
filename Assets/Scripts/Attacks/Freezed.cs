@@ -11,10 +11,10 @@ public class Freezed : MonoBehaviour
 
     private bool IsFreezed;
     private BehaviorAIController AIcontroller;
-    [SerializeField] private float FreezeTime = 1f;
+    [SerializeField] private float FreezeTime = 5f;
     [Tooltip("the script will use this gameobject to render is color")]
-    [SerializeField] private GameObject GameoObject_OnFreeze;
-    [SerializeField] private Material OriginMaterial;
+    private GameObject GameoObject_OnFreeze;
+    private Material OriginMaterial;
     [SerializeField] private Material MatrialOnFreeze;
 
 
@@ -30,6 +30,8 @@ public class Freezed : MonoBehaviour
     void Start()
     {
         AIcontroller = gameObject.GetComponent<BehaviorAIController>();
+        OriginMaterial = gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material;
+        GameoObject_OnFreeze = this.gameObject;
     }
 
     // Update is called once per frame
@@ -38,12 +40,12 @@ public class Freezed : MonoBehaviour
         if (IsFreezed)
         {
             AIcontroller.enabled = false;
-            GameoObject_OnFreeze.GetComponent<SkinnedMeshRenderer>().material = MatrialOnFreeze;
+            GameoObject_OnFreeze.GetComponentInChildren<SkinnedMeshRenderer>().material = MatrialOnFreeze;
             StartCoroutine(warmUp(FreezeTime));
         }
         else {
             AIcontroller.enabled = true;
-            GameoObject_OnFreeze.GetComponent<SkinnedMeshRenderer>().material = OriginMaterial;
+            GameoObject_OnFreeze.GetComponentInChildren<SkinnedMeshRenderer>().material = OriginMaterial;
         }
 
     }
