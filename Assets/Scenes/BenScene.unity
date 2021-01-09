@@ -2394,7 +2394,7 @@ PrefabInstance:
     - target: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d100ff4e9414bd4c88b231a3c74b28d, type: 3}
@@ -2424,7 +2424,7 @@ PrefabInstance:
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: rayLength
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
@@ -2449,12 +2449,12 @@ PrefabInstance:
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: kickForce
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: kickRange
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898412, guid: 00113afb1f29c0648809462326682c44,
         type: 3}

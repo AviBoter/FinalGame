@@ -1469,6 +1469,16 @@ PrefabInstance:
       propertyPath: gunForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6280199645561301284, guid: b5564bc1608c14040ba5726436a17b86,
+        type: 3}
+      propertyPath: kickForce
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280199645561301284, guid: b5564bc1608c14040ba5726436a17b86,
+        type: 3}
+      propertyPath: kickRange
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6280199645561301305, guid: b5564bc1608c14040ba5726436a17b86,
         type: 3}
       propertyPath: ForceLevel
@@ -4835,7 +4845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &846503535
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6157,6 +6167,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: baby (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4272223320576778947, guid: 789e52336a79ef44cb2ef620be7e628c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272223320576778971, guid: 789e52336a79ef44cb2ef620be7e628c,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4272223320576778975, guid: 789e52336a79ef44cb2ef620be7e628c,
         type: 3}
       propertyPath: player
@@ -6702,6 +6722,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2051432350}
     m_Modifications:
+    - target: {fileID: 4272223320576778944, guid: 789e52336a79ef44cb2ef620be7e628c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272223320576778947, guid: 789e52336a79ef44cb2ef620be7e628c,
         type: 3}
       propertyPath: m_Name
@@ -6717,6 +6742,11 @@ PrefabInstance:
       propertyPath: targetFolder
       value: 
       objectReference: {fileID: 796517279}
+    - target: {fileID: 4272223320576778975, guid: 789e52336a79ef44cb2ef620be7e628c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4272223321162589475, guid: 789e52336a79ef44cb2ef620be7e628c,
         type: 3}
       propertyPath: m_LocalPosition.x
