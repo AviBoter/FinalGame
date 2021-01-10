@@ -1,10 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class kickHim : MonoBehaviour
-{ 
+public class SpinKick : MonoBehaviour
+{
     [SerializeField] KeyCode KickKey;
     public float kickForce = 150f;
     public float kickRange = 40f;
@@ -38,10 +37,6 @@ public class kickHim : MonoBehaviour
                 Debug.Log("ray hits: " + hitInfo.transform.name);
             }
         }
-
-
-
-
 
     }
 }

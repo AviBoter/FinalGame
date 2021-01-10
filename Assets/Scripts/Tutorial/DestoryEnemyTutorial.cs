@@ -31,14 +31,17 @@ public class DestoryEnemyTutorial : Tutorial
 
     public override void CheckIfHappaning()
     {
-        if (!enemyAlive && TempEnemy == null) 
+        if (!enemyAlive && TempEnemy == null)
         {
             init();
             enemyAlive = true;
         }
         // enemy destoryed
-        else if(TempEnemy == null)
+        else if (TempEnemy == null)
+        {
+            enemyAlive = false;
             TutorialManager.Instance.CompletedTutorial();
-            
+        }
+
     }
 }
