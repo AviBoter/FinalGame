@@ -367,7 +367,7 @@ MonoBehaviour:
     by pressing w,a,s,d  or arrows keys.
 
     Also you can swap camera angels by
-    mouse movement,
+    mouse movement (exit key to hide mouse cursor)
 
     Go try it now!'
   Keys:
@@ -1185,6 +1185,160 @@ Transform:
   m_Father: {fileID: 1437854548}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &937529459
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 100.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 123
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566101, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5813435943590275617}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: sightRange
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: attackRange
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 6189016756999175938, guid: 5790eb4001fe3e542a5ae81926ea6acf,
+        type: 3}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: shootRange
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566313, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566314, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566315, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566315, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_AutoTraverseOffMeshLink
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566318, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemywithShootTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d100ff4e9414bd4c88b231a3c74b28d, type: 3}
+--- !u!1 &937529460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+    type: 3}
+  m_PrefabInstance: {fileID: 937529459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937529461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937529460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcdeb016ab6e714cad26437488309c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloctyBlock: 4
 --- !u!1 &956348497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1537,84 @@ Transform:
   m_Father: {fileID: 1437854548}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1152059617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1152059618}
+  - component: {fileID: 1152059620}
+  - component: {fileID: 1152059619}
+  m_Layer: 0
+  m_Name: (6,7)KickTutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1152059618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152059617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1214667424}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1152059619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152059617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5919314a98af74e4c874e32916de61a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Order: 7
+  Explanation: 'Great Job!, you finished this tutorial
+
+    Press R key- to reload
+    prev tutorial.
+
+    Press Enter/Return key - to continue.
+
+    press M - return
+    to menu.
+
+
+'
+  reloadKey: 114
+  nextKey: 13
+  menuKey: 109
+  player: {fileID: 5813435943590275617}
+  Prevtutorial_Script: {fileID: 1152059620}
+--- !u!114 &1152059620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152059617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09e7f1bb1c99b2438751a4c44abde78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Order: 6
+  Explanation: "This is kick tutorial. \nYou can kick by pressing F key\nAgain, We
+    spawn for you an baby enemy.\nTry push it out the terrain by kick him!"
+  enemy: {fileID: 1423083342}
 --- !u!4 &1186022822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459664, guid: 170fcf4e078c4fb4eb18e6664e4d909b,
@@ -1434,6 +1666,7 @@ Transform:
   - {fileID: 187551700}
   - {fileID: 1374548075}
   - {fileID: 1843014845}
+  - {fileID: 1152059618}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1681,6 +1914,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1423083342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8418754583964361578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1423083353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423083342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcdeb016ab6e714cad26437488309c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloctyBlock: 4
 --- !u!1 &1437854547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,8 +2143,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1843014845}
+  - component: {fileID: 1843014847}
+  - component: {fileID: 1843014846}
   m_Layer: 0
-  m_Name: (4,5)AttackTutorial-push&kick
+  m_Name: (4,5)PushTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1912,6 +2166,52 @@ Transform:
   m_Father: {fileID: 1214667424}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843014846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843014844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5919314a98af74e4c874e32916de61a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Order: 5
+  Explanation: 'Great Job!, you finished this tutorial
+
+    Press R key- to reload
+    prev tutorial.
+
+    Press Enter/Return key - to continue.
+
+    press M - return
+    to menu.
+
+
+'
+  reloadKey: 114
+  nextKey: 13
+  menuKey: 109
+  player: {fileID: 5813435943590275617}
+  Prevtutorial_Script: {fileID: 1843014847}
+--- !u!114 &1843014847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843014844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09e7f1bb1c99b2438751a4c44abde78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Order: 4
+  Explanation: "This is push tutorial. \nWe spawn for you an baby enemy.\nTry push
+    it out the terrain by run into him using your movement keys"
+  enemy: {fileID: 1423083342}
 --- !u!1 &1870081552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,7 +2634,7 @@ PrefabInstance:
     - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 85.4
+      value: 100.9
       objectReference: {fileID: 0}
     - target: {fileID: 8313598516294391378, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
@@ -2386,6 +2686,72 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566101, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5813435943590275617}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: sightRange
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: attackRange
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 6189016756999175938, guid: 5790eb4001fe3e542a5ae81926ea6acf,
+        type: 3}
+    - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: shootRange
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566313, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566313, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: ForceLevel
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566314, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566315, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_WalkableMask
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566315, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_AutoTraverseOffMeshLink
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585183566318, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
       propertyPath: m_Name
@@ -2410,6 +2776,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Babytutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 3062187727288669064, guid: 00113afb1f29c0648809462326682c44,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4805047130958873139, guid: cc68fa23498d1454f8d96398fb0b072e,
+        type: 3}
     - target: {fileID: 3062187727690868961, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: m_Material
@@ -2449,12 +2821,17 @@ PrefabInstance:
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: kickForce
-      value: 150
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: kickRange
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898412, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
@@ -2470,6 +2847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: DashDistance
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062187727746898425, guid: 00113afb1f29c0648809462326682c44,
+        type: 3}
+      propertyPath: ForceLevel
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: 3062187728743865430, guid: 00113afb1f29c0648809462326682c44,
         type: 3}

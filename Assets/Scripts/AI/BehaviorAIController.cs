@@ -52,10 +52,14 @@ public class BehaviorAIController : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        patrolBehavior = gameObject.AddComponent<PatrolingBehaviorAI>();
-        patrolBehavior.setNavAgent(agent);
-        patrolBehavior.setTargetFolder(targetFolder);
 
+        if (targetFolder != null)
+        {
+
+            patrolBehavior = gameObject.AddComponent<PatrolingBehaviorAI>();
+            patrolBehavior.setNavAgent(agent);
+            patrolBehavior.setTargetFolder(targetFolder);
+        }
         // add to child(2) shootingArea.gameobject
         shootBehavior = transform.GetChild(2).gameObject.AddComponent<ShootBehaviorAI>(); // new ShootBehaviorAI(agent, coll, transform);
         shootBehavior.setNavAgent(agent);
@@ -81,14 +85,21 @@ public class BehaviorAIController : MonoBehaviour
 
         if (agent.isActiveAndEnabled == true && isGrounded())
         {
-            // if Ai in shot range then he is in attack range
-            if (!InSightRange && !InShootRange)
+            if (targetFolder != null)
             {
-                patrolBehavior.Action(true);
-               
-                patrolBehavior.Action(false);
+                // if Ai in shot range then he is in attack range
+                if (!InSightRange && !InShootRange)
+                {
+                    patrolBehavior.Action(true);
+
+                }
+                else
+                {
+                    patrolBehavior.Action(false);
+
+                }
+
             }
-            
 
             if (InSightRange && !InShootRange){ 
                 chaserBehavior.Action(player);
@@ -101,15 +112,7 @@ public class BehaviorAIController : MonoBehaviour
             chaserBehavior.Action(player);
         }
 
-        else if (rb.velocity.magnitude > velocetyBlock)
-        {
-            agent.enabled = false;
-        }
-        else if (rb.velocity.magnitude < velocetyBlock)
-        { 
-            agent.enabled = true;
-            animator.SetBool("walk", true);
-        }
+
         
 
     }

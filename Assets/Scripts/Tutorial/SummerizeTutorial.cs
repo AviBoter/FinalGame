@@ -35,7 +35,10 @@ public class SummerizeTutorial : Tutorial
             TutorialManager.Instance.ReloadPrevTutorial();
         }
         else if (Input.GetKeyDown(nextKey))
+        {
+            player.position = PlayerStartPos;
             TutorialManager.Instance.CompletedTutorial();
+        }
 
         else if (Input.GetKeyDown(menuKey))
             // load menu scene

@@ -1333,7 +1333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8418754584964953684}
   m_Layer: 10
-  m_Name: ShootingAss
+  m_Name: ShootingHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1352,36 +1352,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8313598516294391378}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8418754585519583049
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8418754585519583054}
-  m_Layer: 10
-  m_Name: PeeObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8418754585519583054
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8418754585519583049}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0604, y: 0.063, z: 0.0662}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8313598516294391378}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8427916751346712384
 GameObject:
@@ -1464,7 +1434,7 @@ GameObject:
   - component: {fileID: 8418754585183566313}
   - component: {fileID: 8418754585183566318}
   m_Layer: 10
-  m_Name: EnemyTutorial
+  m_Name: Enemytutorial
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1484,7 +1454,6 @@ Transform:
   - {fileID: 4543998987861980870}
   - {fileID: 5437637934431558010}
   - {fileID: 8418754584964953684}
-  - {fileID: 8418754585519583054}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
