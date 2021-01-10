@@ -40,19 +40,22 @@ public class PushForce : MonoBehaviour
                 GetComponent<Rigidbody>().isKinematic = false;
                 GameObject go = other.gameObject;
                 Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+                if(other.gameObject.tag != "Bullet")
                 other.gameObject.GetComponent<Animator>().Play("pushed");
                 rb.useGravity = false;
                 other.rigidbody.AddForce(transform.forward * ForceLevel, forcemode);
                 yield return new WaitForSeconds(1f);
                 rb.useGravity = true;
             }
-            else
+            
+             else
                 if (!Input.GetKey(KeyCode.F))
             {
                 other.gameObject.GetComponent<Animator>().Play("pushed");
                 other.rigidbody.AddForce(transform.forward * ForceLevel, forcemode);
                
             }
+           
 
         }
 

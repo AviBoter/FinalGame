@@ -46,18 +46,20 @@ public class Movement : MonoBehaviour
     private TouchDetector td;
     private bool playerWantsToJump = false;
     private bool playerWantsToDash = false;
-
+    private float height = 5;
 
     void Start()
     {
         td = GetComponent<TouchDetector>();
         rbody = GetComponent<Rigidbody>();
+        
     }
 
     void Update()
     {
-        playerWantsToDash = false;
-        playerWantsToJump = false;
+        if (rbody.transform.position.y > height)
+            rbody.AddForce(new Vector3(0, -10, 0));
+        
         // Keyboard events are tested each frame, so we should check them here.
         if (Input.GetKeyDown(Jumpkey))
             playerWantsToJump = true;
@@ -76,6 +78,8 @@ public class Movement : MonoBehaviour
 
         if (playerWantsToDash)
         {
+            rbody.gameObject.GetComponent<Animator>().Play("dash");
+
             Vector3 dashVelocity = Vector3.Scale(transform.forward, DashDistance * new Vector3(dashDrag, 0, dashDrag));
             rbody.AddForce(dashVelocity, ForceMode.Impulse);
             playerWantsToDash = false;
