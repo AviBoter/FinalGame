@@ -28,9 +28,9 @@ public class movingAnime : MonoBehaviour
         //anim.SetBool("fall", !td.IsTouching() && !anim.GetBool("walk"));
 
         anim.SetBool("jump", Input.GetKey(Jumpkey));
-       // anim.SetBool("throw", Input.GetKey(KeyCode.T));
-        
-        anim.SetBool("walk", Input.GetKey(Upkey));
+        // anim.SetBool("throw", Input.GetKey(KeyCode.T));
+        if (Input.GetKey(Upkey) && rig.gameObject.GetComponent<TouchDetector>().IsTouching())
+            anim.Play("walk");
         if (Input.GetKeyDown(Kickkey))
         anim.Play("kick");
         anim.SetBool("backwalk", Input.GetKey(Downkey));

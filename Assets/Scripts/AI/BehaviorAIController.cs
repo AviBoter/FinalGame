@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.SceneManagement;
 
 
 /**
@@ -41,6 +41,9 @@ public class BehaviorAIController : MonoBehaviour
     private ChaserBehaviorAI chaserBehavior;
     private PatrolingBehaviorAI patrolBehavior;
     
+    private float velocetyBlock = 0.1f;
+    private Animator animator;
+
 
 
     private void Start()
@@ -48,14 +51,11 @@ public class BehaviorAIController : MonoBehaviour
         
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+        patrolBehavior = gameObject.AddComponent<PatrolingBehaviorAI>();
+        patrolBehavior.setNavAgent(agent);
+        patrolBehavior.setTargetFolder(targetFolder);
 
-        if (targetFolder != null)
-        {
-
-            patrolBehavior = gameObject.AddComponent<PatrolingBehaviorAI>();
-            patrolBehavior.setNavAgent(agent);
-            patrolBehavior.setTargetFolder(targetFolder);
-        }
         // add to child(2) shootingArea.gameobject
         shootBehavior = transform.GetChild(2).gameObject.AddComponent<ShootBehaviorAI>(); // new ShootBehaviorAI(agent, coll, transform);
         shootBehavior.setNavAgent(agent);
@@ -81,35 +81,24 @@ public class BehaviorAIController : MonoBehaviour
 
         if (agent.isActiveAndEnabled == true && isGrounded())
         {
-            if (targetFolder != null)
+            // if Ai in shot range then he is in attack range
+            if (!InSightRange && !InShootRange)
             {
-                // if Ai in shot range then he is in attack range
-                if (!InSightRange && !InShootRange)
-                {
-                    patrolBehavior.Action(true);
-
-                }
-                else
-                {
-                    patrolBehavior.Action(false);
-
-                }
-
+                patrolBehavior.Action(true);
+                patrolBehavior.Action(false);
             }
-
+            
             if (InSightRange && !InShootRange){ 
                 chaserBehavior.Action(player);
             }
             if (InSightRange && InShootRange && !InAttackRange)
             {
+            
                 shootBehavior.Action(player, transform, shotPowerFoward, shotPowerUp, projectile, this, isGrounded());
             }
             if (InSightRange && InShootRange && InAttackRange)
             chaserBehavior.Action(player);
         }
-
-
-        
 
     }
 

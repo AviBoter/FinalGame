@@ -24,10 +24,17 @@ public class readForce : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        animator.SetBool("walk", true);
         if (rb.velocity.magnitude < veloctyBlock)
         {
+           
+           if (rb.GetComponentInParent<TouchDetector>().IsTouching())
+               if( animator.GetBool("walk")==true)
+                animator.Play("walk");
+
+
             agent.enabled = true;
-            animator.SetBool("walk", true);
+        
         }
         else 
         {
