@@ -32,9 +32,6 @@ public class Movement : MonoBehaviour
     [SerializeField] float slowDownAtJump = 0.5f;
 
     [Range(0, 1f)]
-    [SerializeField] float slowDownAtWalk = 0.95f;
-
-    [Range(0, 1f)]
     [SerializeField] float dashDrag = 0.5f;
 
 

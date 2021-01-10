@@ -23,14 +23,13 @@ public class ShootEnemies : MonoBehaviour
 
     private void ShootEnemey()
     {
-        //coll.isTrigger = true;
 
         if (!alreadyShoot){
             
             //Attack
+    
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-           /* if (rb!=null && rb.gameObject.GetComponent<movingAnime>())
-            rb.gameObject.GetComponent<movingAnime>().enabled = false;*/
+
             rb.AddForce(transform.forward * shotPowerFoward, ForceMode.Impulse);
             rb.AddForce(transform.up * shotPowerUp, ForceMode.Impulse);
             alreadyShoot = true;
