@@ -129,8 +129,8 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
-  explosionRange: 20
-  explosionForce: 4000
+  explosionRange: 10
+  explosionForce: 1000
   maxCollisions: 2
   maxLifetime: 1.7
   explodeOnTouch: 1

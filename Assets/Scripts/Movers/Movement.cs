@@ -62,8 +62,7 @@ public class Movement : MonoBehaviour
         if (rbody.transform.position.y > TooHigh)
         {
             rbody.gameObject.GetComponent<Animator>().Play("fall");
-            if (rbody.transform.position.y > URout)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+           
         }
 
         // Keyboard events are tested each frame, so we should check them here.

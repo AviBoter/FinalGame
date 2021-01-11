@@ -23,17 +23,14 @@ public class kickHim : MonoBehaviour
             //position ray casted from
 
             RaycastHit hitInfo;
-            if (Physics.Raycast(me.position, me.forward, out hitInfo))
+            if (Physics.Raycast(me.position, me.forward*2, out hitInfo))
             {
                 if (hitInfo.rigidbody != null)
                 {
                     hitInfo.rigidbody.gameObject.GetComponent<Animator>().Play("kicked");
-<<<<<<< HEAD
-                    hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
-=======
-                   // hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
 
->>>>>>> 483dc04ea386843a25730b268c2cd5ff359769b9
+                    hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+
                     // upwardsModifer is adviced to be 2f 
                     hitInfo.rigidbody.AddExplosionForce(kickForce, transform.position, kickRange, upwardsModifer);
 

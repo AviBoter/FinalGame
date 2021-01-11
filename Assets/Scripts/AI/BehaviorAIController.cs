@@ -111,9 +111,18 @@ public class BehaviorAIController : MonoBehaviour
             if (InSightRange && InShootRange && InAttackRange)
             chaserBehavior.Action(player);
         }
+        else if (rb.velocity.magnitude > velocetyBlock)
+        {
+            agent.enabled = false;
+        }
+        else if (rb.velocity.magnitude < velocetyBlock)
+        {
+
+            agent.enabled = true;
+        }
 
 
-        
+
 
     }
 

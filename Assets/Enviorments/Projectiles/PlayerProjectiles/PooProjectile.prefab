@@ -132,8 +132,8 @@ MonoBehaviour:
     m_Bits: 1024
   explosionRange: 30
   explosionForce: 4000
-  maxCollisions: 2
-  maxLifetime: 1.7
+  maxCollisions: 3
+  maxLifetime: 2
   explodeOnTouch: 1
 --- !u!96 &2714418717097467188
 TrailRenderer:
