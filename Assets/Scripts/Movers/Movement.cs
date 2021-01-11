@@ -48,7 +48,6 @@ public class Movement : MonoBehaviour
     private TouchDetector td;
     private bool playerWantsToJump = false;
     private bool playerWantsToDash = false;
-    private float height = 5;
 
     void Start()
     {

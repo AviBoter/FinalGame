@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// this tutorial instantiate an enemy, and check if player destory him (pushed him off the edge)
 public class DestoryEnemyTutorial : Tutorial
 {
-    //save those keys incase of reload
     [SerializeField] private GameObject enemy;
 
     private GameObject TempEnemy;
@@ -26,6 +26,12 @@ public class DestoryEnemyTutorial : Tutorial
             throw new System.Exception("This script must have enemy");
 
         return Instantiate(enemy, enemy.transform.position, Quaternion.identity);
+    }
+
+
+    public GameObject getEnemy()
+    {
+        return TempEnemy;
     }
 
 
