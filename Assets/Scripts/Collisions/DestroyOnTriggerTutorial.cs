@@ -28,6 +28,7 @@ public class DestroyOnTriggerTutorial : MonoBehaviour
         if (other.tag == player.tag && enabled)
         {
             player.position = PlayerStartPos;
+            player.gameObject.GetComponent<Rigidbody>().velocity.Set(0,0,0);
             TutorialManager.Instance.ReloadPrevTutorial();
         }
         else if(other.tag == "Enemy")

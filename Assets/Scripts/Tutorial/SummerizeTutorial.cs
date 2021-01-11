@@ -41,8 +41,11 @@ public class SummerizeTutorial : Tutorial
         }
 
         else if (Input.GetKeyDown(menuKey))
+        {
             // load menu scene
-            SceneManager.LoadScene(0);
+            //Time.timeScale = 1;
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
+        }
 
     }
 }
