@@ -75,7 +75,7 @@ public class PatrolingBehaviorAI : IBehaviorAI
         // dont repeat target
         int random = Random.Range(0, allTargets.Length - 1) + 1;
         currentTarget = allTargets[random];
-        if(agent.gameObject.GetComponent<TouchDetector>().IsTouching())
+        if(agent.gameObject.GetComponent<TouchDetector>().IsTouching() && agent.isActiveAndEnabled)
         agent.SetDestination(currentTarget.transform.position);
         timeToWaitAtTarget = Random.Range(minWaitAtTarget, maxWaitAtTarget);
 

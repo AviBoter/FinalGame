@@ -100,9 +100,6 @@ public class TutorialManager : MonoBehaviour
         return null;
     }
 
-    public Tutorial getCurrentTutorial() 
-    {
-        return currentTutorial;
-    }
+
 
 }

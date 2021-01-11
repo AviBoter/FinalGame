@@ -41,6 +41,9 @@ public class BehaviorAIController : MonoBehaviour
     private ChaserBehaviorAI chaserBehavior;
     private PatrolingBehaviorAI patrolBehavior;
     
+    private float velocetyBlock = 0.2f;
+    private Animator animator;
+
 
 
     private void Start()
@@ -48,6 +51,7 @@ public class BehaviorAIController : MonoBehaviour
         
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
 
         if (targetFolder != null)
         {

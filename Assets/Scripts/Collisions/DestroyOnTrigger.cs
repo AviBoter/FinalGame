@@ -26,7 +26,7 @@ public class DestroyOnTrigger : MonoBehaviour {
         }
         else {   
 
-            Destroy(other.gameObject);
+            Destroy(other.gameObject.GetComponentInParent<Rigidbody>().gameObject);
             count++;
         }
 
