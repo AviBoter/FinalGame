@@ -28,6 +28,7 @@ public class BehaviorAIController : MonoBehaviour
     [SerializeField] private float shotPowerFoward = 32f;
     [SerializeField] private float shotPowerUp = 8f;
     [SerializeField] private GameObject projectile;
+    private float velocetyBlock = 0.2f;
 
 
 
@@ -41,9 +42,6 @@ public class BehaviorAIController : MonoBehaviour
     private ChaserBehaviorAI chaserBehavior;
     private PatrolingBehaviorAI patrolBehavior;
     
-    private float velocetyBlock = 0.2f;
-    private Animator animator;
-
 
 
     private void Start()
@@ -51,7 +49,6 @@ public class BehaviorAIController : MonoBehaviour
         
         agent = GetComponent<NavMeshAgent>();
         rb = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
 
         if (targetFolder != null)
         {
@@ -80,7 +77,7 @@ public class BehaviorAIController : MonoBehaviour
         InAttackRange = Physics.CheckSphere(transform.position, attackRange, LayerPlayer);
 
 
-      
+
 
 
         if (agent.isActiveAndEnabled == true && isGrounded())
@@ -101,7 +98,8 @@ public class BehaviorAIController : MonoBehaviour
 
             }
 
-            if (InSightRange && !InShootRange){ 
+            if (InSightRange && !InShootRange)
+            {
                 chaserBehavior.Action(player);
             }
             if (InSightRange && InShootRange && !InAttackRange)
@@ -109,7 +107,7 @@ public class BehaviorAIController : MonoBehaviour
                 shootBehavior.Action(player, transform, shotPowerFoward, shotPowerUp, projectile, this, isGrounded());
             }
             if (InSightRange && InShootRange && InAttackRange)
-            chaserBehavior.Action(player);
+                chaserBehavior.Action(player);
         }
         else if (rb.velocity.magnitude > velocetyBlock)
         {
@@ -120,9 +118,6 @@ public class BehaviorAIController : MonoBehaviour
 
             agent.enabled = true;
         }
-
-
-
 
     }
 
