@@ -86,10 +86,12 @@ public class Movement : MonoBehaviour
         inputs = transform.TransformDirection(inputs);
         if (Input.GetAxis("Horizontal") != 0)
         {
+            
             rbody.MovePosition(rbody.position + inputs * Speed * Time.fixedDeltaTime);
         }
-        if(Input.GetAxis("Horizontal").Equals(0) && rbody.velocity.magnitude > 0)
+        if(Input.GetAxis("Horizontal").Equals(0))
         {
+            
             rbody.MovePosition(rbody.position + inputs * Speed * Time.fixedDeltaTime);
         }
 
