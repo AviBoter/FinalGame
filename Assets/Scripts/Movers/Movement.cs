@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 /**
@@ -26,10 +27,14 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private KeyCode Jumpkey;
     [SerializeField] private KeyCode Dashkey;
-
+    [SerializeField] private float TooHigh = 115f;
+    [SerializeField] private float URout = 120f;
 
     [Range(0, 1f)]
     [SerializeField] float slowDownAtJump = 0.5f;
+
+    [Range(0, 1f)]
+    [SerializeField] float slowDownAtWalk = 0.95f;
 
     [Range(0, 1f)]
     [SerializeField] float dashDrag = 0.5f;
@@ -54,9 +59,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (rbody.transform.position.y > height)
-            rbody.AddForce(new Vector3(0, -10, 0));
-        
+        if (rbody.transform.position.y > TooHigh)
+        {
+            rbody.gameObject.GetComponent<Animator>().Play("fall");
+            if (rbody.transform.position.y > URout)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         // Keyboard events are tested each frame, so we should check them here.
         if (Input.GetKeyDown(Jumpkey))
             playerWantsToJump = true;
