@@ -28,7 +28,12 @@ public class kickHim : MonoBehaviour
                 if (hitInfo.rigidbody != null)
                 {
                     hitInfo.rigidbody.gameObject.GetComponent<Animator>().Play("kicked");
+<<<<<<< HEAD
                     hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+=======
+                   // hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+
+>>>>>>> 483dc04ea386843a25730b268c2cd5ff359769b9
                     // upwardsModifer is adviced to be 2f 
                     hitInfo.rigidbody.AddExplosionForce(kickForce, transform.position, kickRange, upwardsModifer);
 

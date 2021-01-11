@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8b94ef8da1a77144498987ac6d2335ae, type: 2}
+  - {fileID: 2100000, guid: f68962e857a866242b0053d09764f3fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,7 +90,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5004893706450650826}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: cebde1074c9e55d4698bb25e4d9193a7, type: 2}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
@@ -154,7 +154,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 1
+  m_Time: 0.5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -236,5 +236,5 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 1024
-  FreezeRange: 6
-  maxLifetime: 1.8
+  FreezeRange: 3
+  maxLifetime: 1.5

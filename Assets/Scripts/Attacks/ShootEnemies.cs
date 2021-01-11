@@ -4,29 +4,18 @@ using UnityEngine;
 
 public class ShootEnemies : MonoBehaviour
 {
-    private CapsuleCollider coll;
     private bool alreadyShoot = false;
 
     [SerializeField] private KeyCode ShootKey;
     [SerializeField] private float shotPowerFoward = 12f;
     [SerializeField] private float shotPowerUp = 8f;
-    [SerializeField] private float timeBetweenAttacks = 1;
+    [SerializeField] private float timeBetweenAttacks = 5;
     [SerializeField] private GameObject projectile;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //coll = gameObject.GetComponent<CapsuleCollider>();
-        //coll.isTrigger = false;
-    }
 
     // Update is called once per frame
     void Update()
     {
-        // always reset after shooting
-        //coll.isTrigger = false;
-
         if (Input.GetKeyDown(ShootKey)) {
             ShootEnemey();
         }
@@ -38,12 +27,12 @@ public class ShootEnemies : MonoBehaviour
 
         if (!alreadyShoot){
             
-
             //Attack
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+           /* if (rb!=null && rb.gameObject.GetComponent<movingAnime>())
+            rb.gameObject.GetComponent<movingAnime>().enabled = false;*/
             rb.AddForce(transform.forward * shotPowerFoward, ForceMode.Impulse);
             rb.AddForce(transform.up * shotPowerUp, ForceMode.Impulse);
-
             alreadyShoot = true;
             Invoke("ResetAttack", timeBetweenAttacks);
         }
