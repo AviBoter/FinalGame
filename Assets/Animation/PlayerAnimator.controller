@@ -332,7 +332,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: kick
-  m_Speed: 5
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3538243302829841875}
@@ -345,7 +345,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 3a17203ae21d9044ca9f384ac026da12,
+  m_Motion: {fileID: -203655887218126122, guid: 2b45595ab171ed3458a99fff5def01ad,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -401,7 +401,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 27f5775979fc671478b84de94bb03c50,
+  m_Motion: {fileID: -203655887218126122, guid: a5f44573b60c4d54db5bc49317d2210d,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
