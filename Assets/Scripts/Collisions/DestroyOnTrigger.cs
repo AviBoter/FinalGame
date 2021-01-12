@@ -20,7 +20,7 @@ public class DestroyOnTrigger : MonoBehaviour {
     [SerializeField] string triggeringTag;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == triggeringTag && enabled)
+        if (other.gameObject.GetComponentInParent<Rigidbody>().tag == triggeringTag && enabled)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

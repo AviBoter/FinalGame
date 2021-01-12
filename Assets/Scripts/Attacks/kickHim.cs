@@ -25,7 +25,7 @@ public class kickHim : MonoBehaviour
             RaycastHit hitInfo;
             if (Physics.Raycast(me.position, me.forward*2, out hitInfo))
             {
-                if (hitInfo.rigidbody != null)
+                if (hitInfo.rigidbody != null && hitInfo.rigidbody.gameObject.GetComponent<NavMeshAgent>())
                 {
                     hitInfo.rigidbody.gameObject.GetComponent<Animator>().Play("kicked");
 

@@ -446,9 +446,9 @@ GameObject:
   - component: {fileID: 1564969800564987474}
   - component: {fileID: 1564969800564987468}
   - component: {fileID: 1564969800564987471}
-  - component: {fileID: 7882953354269788716}
+  - component: {fileID: 4938401052137374785}
   m_Layer: 8
-  m_Name: baby
+  m_Name: babyF
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -629,7 +629,7 @@ MonoBehaviour:
   Lift: 0
   forcemode: 1
   ForceLevel: 15
---- !u!114 &7882953354269788716
+--- !u!114 &4938401052137374785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -638,11 +638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1834806094978804488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dcdeb016ab6e714cad26437488309c3, type: 3}
+  m_Script: {fileID: 11500000, guid: def6308aef459bd48be88cfadc8970ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  veloctyBlock: 4
-  TooHigh: 115
+  height: 115
   URout: 120
 --- !u!1 &1923849723032045651
 GameObject:
