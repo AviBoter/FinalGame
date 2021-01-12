@@ -1,10 +1,16 @@
-# LiadBabies
+# The Baby
 
 ## Game description:
 
-The game is about group of baby dragons who try to push you out of the road to be considered the king of babies.
-try reach the christmas tree to win the game, Have Fun!
+Many years ago,in a far away planet named Krypton, humans had no need to grow up and were not aged through the years. In the magical infant kingdom of paradise,they were living peacefully with harmony with their families. 
 
+One day an ancient,evil entity arrives to their planet.
+The king of Dragons.
+He decided he wants their world,
+but even more, he wants their souls. The powerful dragon took control over most of the babies, only few managed to escape, waiting for a savior. 
+
+The King of babies. 
+The Baby.
 ## Scripts:
 
 **movement**:
@@ -37,6 +43,21 @@ try reach the christmas tree to win the game, Have Fun!
 - ShootBehaviorAI.cs - this script is representing a AI Shoot behavior that instantiate attack on player by given projectile to throw [Link](https://github.com/Lba-universe/PathsToA/blob/master/Assets/Scripts/AI/ShootBehaviorAI.cs)
 - BehaviorAIController.cs - this is script represent AI controller include 3 behaviors of AI patrol , Chase and Shot/Attack [Link](https://github.com/Lba-universe/PathsToA/blob/master/Assets/Scripts/AI/BehaviorAIController.cs)
 
+**Tutorial**:
+- Tutorial.cs - abstract script of Tutorial [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/Tutorial.cs)
+- TutorialManager.cs -used for manage tutorials [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/TutorialManager.cs)
+- SummerizeTutorial.cs - this script coming after each tutorial wait for user ReloadKey to reload prev tutorial or wait for user nextKey for continue [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/SummerizeTutorial.cs)
+- ReachTargetTutorial.cs - check if user Hit given object using distance [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/ReachTargetTutorial.cs)
+- DestoryEnemyTutorial.cs - instantiate an enemy, and check if player destory him (pushed him off the edge) [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/DestoryEnemyTutorial.cs)
+- IsFreezedTutorial.cs - instantiate an enemy, and check if player destory him (pushed him off the edge) and he been freezed
+ [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/IsFreezedTutorial.cs)
+- KeyTutorial.cs -  is key tutorial script, order of pressed doesn't matter, validate if user pressed the given keys [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/KeyTutorial.cs)
+- TriggerTutorial.cs - check if given target collide with game object trigger [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/TriggerTutorial.cs)
+
+**Menu**:
+- MainMenu.cs - used for manage the menu buttons [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Menu/MainMenu.cs)
+
+
 ## Animations:
 
 we take the baby from https://sketchfab.com/
@@ -51,11 +72,11 @@ anime script :[movingAnime.cs](https://github.com/Lba-universe/PathsToA/blob/mas
 
 ## Pics
 
-![](https://github.com/Lba-universe/PathsToA/blob/master/pics/Screenshot%202020-12-29%20062337.png)
+![](https://github.com/Lba-universe/FinalGame/blob/master/pics/WhatsApp%20Image%202021-01-12%20at%2022.04.33%20-%20Copy.jpeg)
 
-![](https://github.com/Lba-universe/PathsToA/blob/master/pics/Screenshot%202020-12-29%20062446.png)
+![](https://github.com/Lba-universe/FinalGame/blob/master/pics/WhatsApp%20Image%202021-01-12%20at%2022.04.34(1).jpeg)
 
-![](https://github.com/Lba-universe/PathsToA/blob/master/pics/pics1.png)
+![](https://github.com/Lba-universe/FinalGame/blob/master/pics/WhatsApp%20Image%202021-01-12%20at%2022.04.34.jpeg)
 
 ## Credits
 
@@ -65,13 +86,18 @@ FREE Christmas Assets/Low Poly by BRAINBoX [Link](https://assetstore.unity.com/p
 
 Music: "Positive" Happy Hip Hop Beat Rap Instrumental (Prod. Ihaksi).
 
+Tutorial Guide - https://www.youtube.com/watch?v=be0C8FXGPrA
+
 <div dir='rtl' lang='he'>
   
   
-# LiadBabies
+# The Baby
 ---
 
-**תיאור המשחק : המשחק הוא על קבוצת תינוקות אשר מנסים לדחוף אחד את השני מהזירה כדי להיחשב מלך התינוקות, במחשק יש שלבים כך שכל שלב הרמה קשה יותר ובנוסף יש אופציה לרב משתתפים**
+**בגלל אילוצי הזמן, לא יכלנו ליצור משחק מרובה משתתפים כפי שדמיינו, לכן עשינו התאמה במשחק שלנו לשחקן יחיד שבו כל תהליכי הליבה המרכזיים נשארו, רק העלילה שונתה טיפה כי שרשום מלעיל.**
+
+####
+תיאור המשחק : המשחק הוא על קבוצת תינוקות אשר מנסים לדחוף אחד את השני האחרון שישאר הוא יהיה מלך התינוקות, במשחק יש שלבים כך שכל שלב הרמה קשה יותר ובעתיד יש אופציה לרב משתתפים
 
 ## מהות המשחק
 
