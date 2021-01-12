@@ -37,6 +37,21 @@ try reach the christmas tree to win the game, Have Fun!
 - ShootBehaviorAI.cs - this script is representing a AI Shoot behavior that instantiate attack on player by given projectile to throw [Link](https://github.com/Lba-universe/PathsToA/blob/master/Assets/Scripts/AI/ShootBehaviorAI.cs)
 - BehaviorAIController.cs - this is script represent AI controller include 3 behaviors of AI patrol , Chase and Shot/Attack [Link](https://github.com/Lba-universe/PathsToA/blob/master/Assets/Scripts/AI/BehaviorAIController.cs)
 
+**Tutorial**:
+- Tutorial.cs - abstract script of Tutorial [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/Tutorial.cs)
+- TutorialManager.cs -used for manage tutorials [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/TutorialManager.cs)
+- SummerizeTutorial.cs - this script coming after each tutorial wait for user ReloadKey to reload prev tutorial or wait for user nextKey for continue [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/SummerizeTutorial.cs)
+- ReachTargetTutorial.cs - check if user Hit given object using distance [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/ReachTargetTutorial.cs)
+- DestoryEnemyTutorial.cs - instantiate an enemy, and check if player destory him (pushed him off the edge) [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/DestoryEnemyTutorial.cs)
+- IsFreezedTutorial.cs - instantiate an enemy, and check if player destory him (pushed him off the edge) and he been freezed
+ [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/IsFreezedTutorial.cs)
+- KeyTutorial.cs -  is key tutorial script, order of pressed doesn't matter, validate if user pressed the given keys [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/KeyTutorial.cs)
+- TriggerTutorial.cs - check if given target collide with game object trigger [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Tutorial/TriggerTutorial.cs)
+
+**Menu**:
+- MainMenu.cs - used for manage the menu buttons [Link](https://github.com/Lba-universe/FinalGame/blob/master/Assets/Scripts/Menu/MainMenu.cs)
+
+
 ## Animations:
 
 we take the baby from https://sketchfab.com/
@@ -64,6 +79,8 @@ Unity Particle Pack 5.x - [Link](https://assetstore.unity.com/packages/essential
 FREE Christmas Assets/Low Poly by BRAINBoX [Link](https://assetstore.unity.com/packages/3d/props/free-christmas-assets-low-poly-13102)
 
 Music: "Positive" Happy Hip Hop Beat Rap Instrumental (Prod. Ihaksi).
+
+Tutorial Guide - https://www.youtube.com/watch?v=be0C8FXGPrA
 
 <div dir='rtl' lang='he'>
   
