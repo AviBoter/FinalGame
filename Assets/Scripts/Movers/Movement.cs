@@ -27,8 +27,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private KeyCode Jumpkey;
     [SerializeField] private KeyCode Dashkey;
-    [SerializeField] private float TooHigh = 115f;
-    [SerializeField] private float URout = 120f;
+   
 
     [Range(0, 1f)]
     [SerializeField] float slowDownAtJump = 0.5f;
@@ -48,7 +47,6 @@ public class Movement : MonoBehaviour
     private TouchDetector td;
     private bool playerWantsToJump = false;
     private bool playerWantsToDash = false;
-    private float height = 5;
 
     void Start()
     {
@@ -59,11 +57,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (rbody.transform.position.y > TooHigh)
-        {
-            rbody.gameObject.GetComponent<Animator>().Play("fall");
-           
-        }
+        
 
         // Keyboard events are tested each frame, so we should check them here.
         if (Input.GetKeyDown(Jumpkey))
