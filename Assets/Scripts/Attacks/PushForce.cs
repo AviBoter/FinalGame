@@ -45,7 +45,8 @@ public class PushForce : MonoBehaviour
                 rb.useGravity = false;
                 other.rigidbody.AddForce(transform.forward * ForceLevel, forcemode);
                 yield return new WaitForSeconds(1f);
-                rb.useGravity = true;
+                if(rb)
+                    rb.useGravity = true;
             }
             
              else

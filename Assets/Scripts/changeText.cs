@@ -23,11 +23,11 @@ public class changeText : MonoBehaviour
     void Update()
     {
         text.text = "enemy to push away: " + (enemy-distroyScript.getCount());
-        if(enemy- distroyScript.getCount() == 0)
+        if(enemy- distroyScript.getCount() <= 0)
         {
             Tree.SetActive(true);
            
-            text.text = "graet!! mow go to the "+Tree.gameObject.name;
+            text.text = "Graet!! Now go to the "+Tree.gameObject.name;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -84,8 +85,11 @@ public class TutorialManager : MonoBehaviour
     public void CompletedAllTutorials()
     {
         expText.text = "You have completed all the tutorials";
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+
 
         // load back menu 
+
     }
 
     // we must go in loop because we dont know the Order

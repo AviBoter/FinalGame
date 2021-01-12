@@ -39,7 +39,7 @@ public class KeyTutorial : Tutorial
         {
             Debug.Log(Input.inputString);
 
-            if (Input.inputString.Contains(tempKeys[i]))
+            if (Input.inputString.ToUpper().Contains(tempKeys[i]))
             {
                 tempKeys.RemoveAt(i);
                 break;

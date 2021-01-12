@@ -962,7 +962,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
     - target: {fileID: 2538283177874437276, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: shootRange
@@ -978,6 +978,12 @@ PrefabInstance:
       propertyPath: attackRange
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 2538283177874437276, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283177952156880, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Mass
@@ -992,7 +998,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283177952156883, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283177952156888, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Material
@@ -1077,7 +1089,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283177963375344, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283177963375356, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Height
@@ -1167,7 +1185,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
     - target: {fileID: 2538283178067149984, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: sightRange
@@ -1183,6 +1201,12 @@ PrefabInstance:
       propertyPath: shootRange
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2538283178067149984, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178067149996, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Height
@@ -1277,7 +1301,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178164482465, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178164482470, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Mass
@@ -1477,7 +1507,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178371228923, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178388357522, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: player
@@ -1487,7 +1523,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178388357522, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178388357528, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Material
@@ -1567,7 +1609,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178390259375, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178390259380, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Material
@@ -1727,7 +1775,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178439942557, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178440388800, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Enabled
@@ -1752,7 +1806,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
     - target: {fileID: 2538283178440388859, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: sightRange
@@ -1768,6 +1822,12 @@ PrefabInstance:
       propertyPath: shootRange
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2538283178440388859, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178517476594, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Height
@@ -1842,7 +1902,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178517476598, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178517476604, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Material
@@ -1892,7 +1958,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
     - target: {fileID: 2538283178664046567, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: sightRange
@@ -1908,6 +1974,12 @@ PrefabInstance:
       propertyPath: shootRange
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2538283178664046567, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178829386480, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Mass
@@ -1922,7 +1994,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
     - target: {fileID: 2538283178829386483, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: sightRange
@@ -1938,6 +2010,12 @@ PrefabInstance:
       propertyPath: shootRange
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 2538283178829386483, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178829386488, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Enabled
@@ -2047,7 +2125,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178928699679, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178928699876, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Radius
@@ -2187,7 +2271,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178938223966, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178983085832, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: player
@@ -2197,7 +2287,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283178983085832, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283178983085845, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Material
@@ -2352,7 +2448,7 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
     - target: {fileID: 2538283179279415742, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: sightRange
@@ -2368,6 +2464,12 @@ PrefabInstance:
       propertyPath: shootRange
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2538283179279415742, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283179511423552, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: player
@@ -2377,7 +2479,13 @@ PrefabInstance:
         type: 3}
       propertyPath: targetFolder
       value: 
-      objectReference: {fileID: 1287139345}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2538283179511423552, guid: 48e5610290b658a458b9045a65ba59b8,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 7656694278671222514, guid: faaa4315ebc7cfa4baec124dd7180530,
+        type: 3}
     - target: {fileID: 2538283179511423557, guid: 48e5610290b658a458b9045a65ba59b8,
         type: 3}
       propertyPath: m_Mass
@@ -3994,6 +4102,20 @@ CapsuleCollider:
   m_Height: 0.18285097
   m_Direction: 1
   m_Center: {x: 0, y: 0.08857452, z: 0}
+--- !u!114 &1167420118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167420116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def6308aef459bd48be88cfadc8970ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: -50
+  URout: -35
 --- !u!1001 &1250264899
 PrefabInstance:
   m_ObjectHideFlags: 0
