@@ -431,14 +431,11 @@ MonoBehaviour:
 
     Press Enter/Return key - to continue.
 
-    press M - return
-    to menu.
 
 
 '
   reloadKey: 114
   nextKey: 13
-  menuKey: 109
   player: {fileID: 5813435943590275617}
   Prevtutorial_Script: {fileID: 187551702}
 --- !u!114 &187551702
@@ -454,20 +451,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Order: 0
-  Explanation: 'Hello player, this is movment tutorial.
-
-    You can move your baby
-    by pressing w,a,s,d  or arrows keys.
-
-    Also you can swap camera angels by
-    mouse movement (exit key to hide mouse cursor)
-
-    Go try it now!'
+  Explanation: "Hello player \nmake sure you on ENGLISH KEYBOARD, this is movment
+    tutorial.\nYou can move your baby by pressing w,a,s,d  keys.\nAlso you can swap
+    camera angels by mouse movement (exit key to hide mouse cursor)\nGo try it now!"
   Keys:
-  - w
-  - a
-  - s
-  - d
+  - W
+  - A
+  - S
+  - D
 --- !u!1 &199907751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,14 +1163,9 @@ MonoBehaviour:
 
     Press Enter/Return key - to continue.
 
-    press M - return
-    to menu.
-
-
 '
   reloadKey: 114
   nextKey: 13
-  menuKey: 109
   player: {fileID: 5813435943590275617}
   Prevtutorial_Script: {fileID: 856638954}
 --- !u!114 &856638954
@@ -1215,7 +1201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &909306449
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1577,14 +1563,9 @@ MonoBehaviour:
 
     Press Enter/Return key - to continue.
 
-    press M - return
-    to menu.
-
-
 '
   reloadKey: 114
   nextKey: 13
-  menuKey: 109
   player: {fileID: 5813435943590275617}
   Prevtutorial_Script: {fileID: 1109743344}
 --- !u!65 &1109743343
@@ -1701,14 +1682,9 @@ MonoBehaviour:
 
     Press Enter/Return key - to continue.
 
-    press M - return
-    to menu.
-
-
 '
   reloadKey: 114
   nextKey: 13
-  menuKey: 109
   player: {fileID: 5813435943590275617}
   Prevtutorial_Script: {fileID: 1152059620}
 --- !u!114 &1152059620
@@ -1963,14 +1939,9 @@ MonoBehaviour:
 
     Press Enter/Return key - to continue.
 
-    press M - return
-    to menu.
-
-
 '
   reloadKey: 114
   nextKey: 13
-  menuKey: 109
   player: {fileID: 5813435943590275617}
   Prevtutorial_Script: {fileID: 1374548076}
 --- !u!1 &1409101467
@@ -2441,14 +2412,9 @@ MonoBehaviour:
 
     Press Enter/Return key - to continue.
 
-    press M - return
-    to menu.
-
-
 '
   reloadKey: 114
   nextKey: 13
-  menuKey: 109
   player: {fileID: 5813435943590275617}
   Prevtutorial_Script: {fileID: 1843014847}
 --- !u!114 &1843014847
@@ -2978,6 +2944,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8418754584588545794, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.06910915
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754584588545794, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00041992666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754584588545794, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.022102421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754584588545794, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.0000000032922776
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754584588545794, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.01488958
+      objectReference: {fileID: 0}
     - target: {fileID: 8418754585183566101, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
       propertyPath: m_Enabled
@@ -3074,6 +3065,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585594534595, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.07769475
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585594534595, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.004693179
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585594534595, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.020588638
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585594534595, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 2.1444115e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418754585594534595, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.014693174
       objectReference: {fileID: 0}
     - target: {fileID: 8652546699232890088, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}

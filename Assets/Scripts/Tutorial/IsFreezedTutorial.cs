@@ -22,7 +22,7 @@ public class IsFreezedTutorial : DestoryEnemyTutorial
     public override void init()
     {
         base.init();
-        freezeComponent = base.gameObject.GetComponent<Freezed>();
+        freezeComponent = base.getEnemy().GetComponent<Freezed>();
         firstTime = true;
 }
 
@@ -35,7 +35,7 @@ public override void CheckIfHappaning()
             playerFreezedTarget = freezeComponent.getIsFreezed();
 
 
-        if (playerFreezedTarget && base.gameObject == null)
+        if (playerFreezedTarget && base.getEnemy() == null)
         {
             TutorialManager.Instance.CompletedTutorial();
             firstTime = true;
@@ -44,7 +44,7 @@ public override void CheckIfHappaning()
         }
 
         // init enemy
-        else if (base.gameObject == null)
+        else if (base.getEnemy() == null)
         {
             // create enemy
             init();

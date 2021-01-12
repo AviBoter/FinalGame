@@ -12,7 +12,7 @@ public class SummerizeTutorial : Tutorial
 
     [SerializeField] private KeyCode nextKey;
 
-    [SerializeField] private KeyCode menuKey;
+  
 
 
     [SerializeField] private Transform player;
@@ -40,9 +40,7 @@ public class SummerizeTutorial : Tutorial
             TutorialManager.Instance.CompletedTutorial();
         }
 
-        else if (Input.GetKeyDown(menuKey))
-            // load menu scene
-            SceneManager.LoadScene(0);
+       
 
     }
 }
