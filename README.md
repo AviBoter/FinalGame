@@ -1,10 +1,16 @@
-# LiadBabies
+# The Baby
 
 ## Game description:
 
-The game is about group of baby dragons who try to push you out of the road to be considered the king of babies.
-try reach the christmas tree to win the game, Have Fun!
+Many years ago,in a far away planet named Krypton, humans had no need to grow up and were not aged through the years. In the magical infant kingdom of paradise,they were living peacefully with harmony with their families. 
 
+One day an ancient,evil entity arrives to their planet.
+The king of Dragons.
+He decided he wants their world,
+but even more, he wants their souls. The powerful dragon took control over most of the babies, only few managed to escape, waiting for a savior. 
+
+The King of babies. 
+The Baby.
 ## Scripts:
 
 **movement**:
@@ -85,10 +91,11 @@ Tutorial Guide - https://www.youtube.com/watch?v=be0C8FXGPrA
 <div dir='rtl' lang='he'>
   
   
-# LiadBabies
+# The Baby
 ---
 
-**תיאור המשחק : המשחק הוא על קבוצת תינוקות אשר מנסים לדחוף אחד את השני מהזירה כדי להיחשב מלך התינוקות, במחשק יש שלבים כך שכל שלב הרמה קשה יותר ובנוסף יש אופציה לרב משתתפים**
+**בגלל אילוצי הזמן, לא יכלנו ליצור משחק מרובה משתתפים כפי שדמיינו, לכן עשינו התאמה במשחק שלו לשחקן יחיד שבו שבו כל תהליכי הליבה המרכזיים נשארו, רק העלילה שונתה טיפה כי שרשום מלעיל.**
+תיאור המשחק : המשחק הוא על קבוצת תינוקות אשר מנסים לדחוף אחד את השני האחרון שישאר הוא יהיה מלך התינוקות, במשחק יש שלבים כך שכל שלב הרמה קשה יותר ובעתיד יש אופציה לרב משתתפים
 
 ## מהות המשחק
 
