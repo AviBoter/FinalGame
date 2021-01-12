@@ -66,11 +66,11 @@ anime script :[movingAnime.cs](https://github.com/Lba-universe/PathsToA/blob/mas
 
 ## Pics
 
-![](https://github.com/Lba-universe/PathsToA/blob/master/pics/Screenshot%202020-12-29%20062337.png)
+![](https://github.com/Lba-universe/FinalGame/blob/master/pics/WhatsApp%20Image%202021-01-12%20at%2022.04.33%20-%20Copy.jpeg)
 
-![](https://github.com/Lba-universe/PathsToA/blob/master/pics/Screenshot%202020-12-29%20062446.png)
+![](https://github.com/Lba-universe/FinalGame/blob/master/pics/WhatsApp%20Image%202021-01-12%20at%2022.04.34(1).jpeg)
 
-![](https://github.com/Lba-universe/PathsToA/blob/master/pics/pics1.png)
+![](https://github.com/Lba-universe/FinalGame/blob/master/pics/WhatsApp%20Image%202021-01-12%20at%2022.04.34.jpeg)
 
 ## Credits
 
