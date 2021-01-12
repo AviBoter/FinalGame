@@ -1433,6 +1433,7 @@ GameObject:
   - component: {fileID: 8418754585183566312}
   - component: {fileID: 8418754585183566313}
   - component: {fileID: 8418754585183566318}
+  - component: {fileID: -5676094765954634251}
   m_Layer: 10
   m_Name: Enemytutorial
   m_TagString: Enemy
@@ -1593,7 +1594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lift: 0
   forcemode: 1
-  ForceLevel: 10
+  ForceLevel: 8
 --- !u!114 &8418754585183566318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,6 +1611,21 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   touchingColliders: 0
+--- !u!114 &-5676094765954634251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652546699232890088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcdeb016ab6e714cad26437488309c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloctyBlock: 4
+  TooHigh: 115
+  URout: 120
 --- !u!1 &8843664807777556684
 GameObject:
   m_ObjectHideFlags: 0

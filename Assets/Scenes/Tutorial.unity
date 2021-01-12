@@ -2037,21 +2037,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8418754583964361578}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1423083353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1423083342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dcdeb016ab6e714cad26437488309c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  veloctyBlock: 4
-  TooHigh: 115
-  URout: 120
 --- !u!1 &1437854547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,7 +2997,8 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 5813435943590275617}
+      objectReference: {fileID: 3311741112612781572, guid: 00113afb1f29c0648809462326682c44,
+        type: 3}
     - target: {fileID: 8418754585183566312, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
       propertyPath: sightRange
@@ -3042,7 +3028,7 @@ PrefabInstance:
     - target: {fileID: 8418754585183566313, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
       propertyPath: ForceLevel
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8418754585183566313, guid: 7d100ff4e9414bd4c88b231a3c74b28d,
         type: 3}
@@ -3244,11 +3230,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 13400000, guid: cebde1074c9e55d4698bb25e4d9193a7,
         type: 2}
-    - target: {fileID: 3062187727746898400, guid: 00113afb1f29c0648809462326682c44,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898401, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: m_Mass
@@ -3282,12 +3263,12 @@ PrefabInstance:
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: kickForce
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: kickRange
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3062187727746898404, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
@@ -3455,6 +3436,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6001249460929373522, guid: 00113afb1f29c0648809462326682c44,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: cebde1074c9e55d4698bb25e4d9193a7,
+        type: 2}
     - target: {fileID: 6214392750250067819, guid: 00113afb1f29c0648809462326682c44,
         type: 3}
       propertyPath: m_TagString

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6486856761903588021}
-  - component: {fileID: 1564969800399586664}
+  - component: {fileID: 635288694684790514}
   m_Layer: 8
   m_Name: mixamorig:Spine
   m_TagString: Untagged
@@ -32,8 +32,8 @@ Transform:
   m_Father: {fileID: 6804103460524445990}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1564969800399586664
-SphereCollider:
+--- !u!136 &635288694684790514
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -41,10 +41,11 @@ SphereCollider:
   m_GameObject: {fileID: 4094938135608034}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.05
-  m_Center: {x: 0, y: 0.05, z: 0.005}
+  m_Enabled: 1
+  m_Radius: 0.025
+  m_Height: 0
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &383671512821889901
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +438,6 @@ GameObject:
   - component: {fileID: 1314306449230180786}
   - component: {fileID: 4962252192924003272}
   - component: {fileID: 1564969800564987479}
-  - component: {fileID: 1564969800564987478}
   - component: {fileID: 1564969800564987482}
   - component: {fileID: 1564969800564987477}
   - component: {fileID: 1564969800564987476}
@@ -446,6 +446,7 @@ GameObject:
   - component: {fileID: 1564969800564987474}
   - component: {fileID: 1564969800564987468}
   - component: {fileID: 1564969800564987471}
+  - component: {fileID: 7882953354269788716}
   m_Layer: 8
   m_Name: baby
   m_TagString: Player
@@ -507,20 +508,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!136 &1564969800564987478
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834806094978804488}
-  m_Material: {fileID: 13400000, guid: cebde1074c9e55d4698bb25e4d9193a7, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.02
-  m_Height: 0.19
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.09, z: 0}
 --- !u!114 &1564969800564987482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,13 +599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9985bc9f990f00c439e19873cca43bef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 30
-  rayDuration: 1
-  rayColor: {r: 0, g: 0, b: 0, a: 1}
-  camera: {fileID: 1564969799001993678}
   KickKey: 102
-  gunForce: 30
-  walkForceMode: 1
+  kickForce: 150
+  kickRange: 40
 --- !u!114 &1564969800564987468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +629,21 @@ MonoBehaviour:
   Lift: 0
   forcemode: 1
   ForceLevel: 15
+--- !u!114 &7882953354269788716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834806094978804488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dcdeb016ab6e714cad26437488309c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloctyBlock: 4
+  TooHigh: 115
+  URout: 120
 --- !u!1 &1923849723032045651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3905618496492922970}
-  - component: {fileID: 1564969798744364000}
+  - component: {fileID: 6888697462774687866}
   m_Layer: 8
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
@@ -1262,8 +1260,8 @@ Transform:
   m_Father: {fileID: 6804103460524445990}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1564969798744364000
-BoxCollider:
+--- !u!136 &6888697462774687866
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1271,10 +1269,11 @@ BoxCollider:
   m_GameObject: {fileID: 4481895553754717300}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.03, z: 0.02}
-  m_Center: {x: 0, y: 0.02, z: 0}
+  m_Enabled: 1
+  m_Radius: 0.015
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &4487049788357146909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7271230727355852313}
-  - component: {fileID: 1564969800543430487}
+  - component: {fileID: 208753210151154425}
   m_Layer: 8
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
@@ -1369,8 +1368,8 @@ Transform:
   m_Father: {fileID: 6804103460524445990}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1564969800543430487
-BoxCollider:
+--- !u!136 &208753210151154425
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1378,10 +1377,11 @@ BoxCollider:
   m_GameObject: {fileID: 4655918812240863954}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.03, z: 0.02}
-  m_Center: {x: 0, y: 0.02, z: 0}
+  m_Enabled: 1
+  m_Radius: 0.015
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.015, z: 0}
 --- !u!1 &5843064751449541893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,6 +1702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4922936008847893297}
+  - component: {fileID: 3070325192731383791}
   m_Layer: 8
   m_Name: mixamorig:Head
   m_TagString: Untagged
@@ -1724,6 +1725,19 @@ Transform:
   m_Father: {fileID: 5754357918915562059}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &3070325192731383791
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8282324369132000573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.05
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!1 &8324823537173738489
 GameObject:
   m_ObjectHideFlags: 0
