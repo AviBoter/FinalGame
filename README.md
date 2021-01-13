@@ -4,7 +4,7 @@
 
 #### [The Game](https://lba-universe.itch.io/baby)
 
-#### [Trailer](https://www.youtube.com/watch?v=wZSdAxpi7_s&ab_channel=LiadBenmoshe)
+#### [Trailer](https://www.youtube.com/watch?v=wZSdAxpi7_s&feature=youtu.be)
 
 
 
