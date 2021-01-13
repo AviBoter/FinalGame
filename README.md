@@ -8,7 +8,7 @@
 
 ## Game description:
 
-Many years ago,in a far away planet named Krypton, humans had no need to grow up and were not aged through the years. In the magical infant kingdom of paradise,they were living peacefully with harmony with their families. 
+Many years ago,in a far away planet named Krypton, humans had no need to grow up and were not aged through the years. In the magical infant kingdom of paradise,they were living peacefully in harmony with their families. 
 
 One day an ancient,evil entity arrives to their planet.
 The king of Dragons.
