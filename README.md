@@ -1,4 +1,4 @@
-itch link: [Link](https://lba-universe.itch.io/baby)
+
 
 # The Baby
 
